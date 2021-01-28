@@ -17,7 +17,8 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
 
-    async def ika(ctx):
+@bot.command()
+async def ika(ctx):
     await ctx.send('ikaikasii')
 
 bot.run(token)
