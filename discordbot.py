@@ -19,6 +19,7 @@ async def ping(ctx):
 
 @bot.command()
 async def ika(ctx):
-    await ctx.send('ikaikasii')
+    await ctx.send('gawashii')
+
 
 bot.run(token)
