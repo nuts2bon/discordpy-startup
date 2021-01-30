@@ -1,7 +1,11 @@
+#coding:utf-8
 from discord.ext import commands
 import os
 import traceback
-
+import json
+json_open_wp = open('./weapon.json','r')
+weapons=json.load(json_open_wp)
+#weapons['section1']['number']
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
