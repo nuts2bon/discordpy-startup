@@ -20,6 +20,10 @@ async def ping(ctx):
 @bot.command()
 async def ika(ctx):
     await ctx.send('gawashii')
+    
+@bot.command()
+async def rand_buki(ctx)
+		await ctx.send('スプラシューターベッチュー')
 
 
 bot.run(token)
