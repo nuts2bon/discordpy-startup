@@ -23,7 +23,7 @@ async def ika(ctx):
     
 @bot.command()
 async def rand_buki(ctx):
-		await ctx.send('sushi')
+		await ctx.send('スプラシューターベッチュー')
 
 
 bot.run(token)
