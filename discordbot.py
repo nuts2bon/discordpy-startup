@@ -27,7 +27,7 @@ async def ika(ctx):
     
 @bot.command()
 async def rand_buki(ctx):
-		await ctx.send('スプラシューターベッチュー')
+		await ctx.send(weapons['key'])
 
 
 bot.run(token)
