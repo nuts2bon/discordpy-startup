@@ -3,6 +3,7 @@ from discord.ext import commands
 import os
 import traceback
 import json
+import random
 lang  = "ja_JP"
 json_open_wp = open('./weapon.json','r')
 weapons=json.load(json_open_wp)
@@ -28,7 +29,7 @@ async def ika(ctx):
     
 @bot.command()
 async def rand_buki(ctx):
-		await ctx.send(weapons[0]["name"][lang])
+		await ctx.send(random.choice(weapons)["name"][lang])
 
 
 bot.run(token)
