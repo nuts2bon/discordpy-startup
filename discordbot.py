@@ -4,12 +4,13 @@ import os
 import traceback
 import json
 import random
-lang  = "ja_JP"
-json_open_wp = open('./weapon.json','r')
-weapons=json.load(json_open_wp)
+import ikaTools
+#json_open_wp = open('./weapon.json','r')
+#weapons=json.load(json_open_wp)
 #weapons['section1']['number']
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
+ikaTools = ikaTools()
 
 
 @bot.event
@@ -29,7 +30,7 @@ async def ika(ctx):
     
 @bot.command()
 async def rand_buki(ctx):
-		await ctx.send(random.choice(weapons)["name"][lang])
+		await ctx.send(ikaTools.getBukiData)
 
 
 bot.run(token)
