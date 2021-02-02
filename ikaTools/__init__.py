@@ -1,1 +1,1 @@
-from ikaTools.ikaTools import *
+from ikaTools import *

@@ -2,16 +2,19 @@
 from discord.ext import commands
 import os
 import traceback
+import sys,codecs
 import json
 import random
 import ikaTools
+
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout)
+bot = commands.Bot(command_prefix='/')
+token = os.environ['DISCORD_BOT_TOKEN']
+ikaT = ikaTools.ikaTools()
+
 #json_open_wp = open('./weapon.json','r')
 #weapons=json.load(json_open_wp)
 #weapons['section1']['number']
-bot = commands.Bot(command_prefix='/')
-token = os.environ['DISCORD_BOT_TOKEN']
-ikaTools = ikaTools()
-
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -30,7 +33,7 @@ async def ika(ctx):
     
 @bot.command()
 async def rand_buki(ctx):
-		await ctx.send(ikaTools.getBukiData)
+		await ctx.send(ikaT.getBukiData)
 
 
 bot.run(token)
