@@ -7,7 +7,7 @@ import json
 import random
 import ikaTools
 
-sys.stdout = codecs.getwriter("utf-8")(sys.stdout)
+#sys.stdout = codecs.getwriter("utf-8")(sys.stdout)
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 ikaT = ikaTools.ikaTools()
