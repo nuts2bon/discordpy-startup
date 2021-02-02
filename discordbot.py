@@ -2,7 +2,7 @@
 from discord.ext import commands
 import os
 import traceback
-import sys,codecs
+#import sys,codecs
 import json
 import random
 import ikaTools
