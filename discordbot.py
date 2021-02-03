@@ -28,9 +28,6 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
 
-@bot.command()
-async def ika(ctx):
-    await ctx.send('gawashii')
     
 @bot.command()
 async def rand_buki(ctx):
