@@ -6,12 +6,12 @@ import traceback
 import json
 import random
 #import it
-import ikaTools
+import ikaTools 
 
 #sys.stdout = codecs.getwriter("utf-8")(sys.stdout)
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
-ikaT = ikaTools.ikaTools.ikaTools()
+ikaT = ikaTools.ikaTools()
 
 #json_open_wp = open('./weapon.json','r')
 #weapons=json.load(json_open_wp)
