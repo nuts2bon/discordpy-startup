@@ -5,7 +5,8 @@ import traceback
 #import sys,codecs
 import json
 import random
-import ikaTools
+import it
+#import ikaTools
 
 #sys.stdout = codecs.getwriter("utf-8")(sys.stdout)
 bot = commands.Bot(command_prefix='/')
