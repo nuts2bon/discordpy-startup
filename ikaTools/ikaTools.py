@@ -25,3 +25,4 @@ class ikaTools:
         return self.buki["name"][self.lang]
         
 
+
