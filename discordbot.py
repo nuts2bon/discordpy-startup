@@ -37,4 +37,5 @@ async def rand_buki(ctx):
 		await ctx.send(ikaT.getBukiData())
 
 
+
 bot.run(token)
