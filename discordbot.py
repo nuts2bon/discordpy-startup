@@ -34,7 +34,7 @@ async def ika(ctx):
     
 @bot.command()
 async def rand_buki(ctx):
-		await ctx.send(ikaT.getBukiData)
+		await ctx.send(ikaT.getBukiData())
 
 
 bot.run(token)
