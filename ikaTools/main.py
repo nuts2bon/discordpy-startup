@@ -21,7 +21,8 @@ class ikaTools:
     
 
     def getBukiData(self,id="rand"):
-        #buki = self.setOneBuki(id)
+        if id == "rand":
+            self.setOneBuki()
         return self.buki["name"][self.lang]
 
     
