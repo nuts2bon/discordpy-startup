@@ -3,7 +3,7 @@ import random
 
 class ikaTools:
     lang  = "ja_JP"
-    weapons_path = "./weapon.json"
+    weapons_path = "./ikaTools/weapon.json"
     json_open_wp = open(weapons_path)
     weapons=json.load(json_open_wp)
     def __init__(self):
