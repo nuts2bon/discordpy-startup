@@ -23,6 +23,8 @@ class ikaTools:
     def getBukiData(self,id="rand"):
         #buki = self.setOneBuki(id)
         return self.buki["name"][self.lang]
+
+    
         
 
 

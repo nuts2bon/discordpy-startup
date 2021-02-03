@@ -31,7 +31,8 @@ async def ping(ctx):
     
 @bot.command()
 async def rand_buki(ctx):
-		await ctx.send(ikaT.getBukiData())
+    ikaT.setOneBuki()
+	await ctx.send(ikaT.getBukiData())
 
 
 
